@@ -27,7 +27,7 @@ body:
         원하는 동작이나 사용자 경험을
         구체적으로 설명해 주세요.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: alternatives
@@ -47,7 +47,7 @@ body:
         이 기능이 사용자와 프로젝트에 주는 효과를
         작성해 주세요.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: additional
@@ -67,11 +67,11 @@ body:
         - label: >-
             비슷한 기능 요청이 이미 등록되어 있는지
             검색했습니다.
-          required: true
+          required: false
         - label: >-
             특정 구현보다 해결할 문제와 기대 결과를
             중심으로 작성했습니다.
-          required: true
+          required: false
 
   - type: markdown
     attributes:
