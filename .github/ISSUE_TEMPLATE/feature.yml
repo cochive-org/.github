@@ -1,8 +1,6 @@
 name: 기능 요청
 description: 새로운 기능이나 기존 기능의 개선을 제안해 주세요.
 title: "[Feature] "
-labels:
-  - enhancement
 body:
   - type: markdown
     attributes:
