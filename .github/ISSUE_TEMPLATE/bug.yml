@@ -8,7 +8,7 @@ body:
         제보해 주셔서 감사합니다.
         문제를 빠르게 확인할 수 있도록 아래 내용을 작성해 주세요.
 
-  - type: input
+  - type: textarea
     id: summary
     attributes:
       label: 문제 설명
@@ -17,18 +17,21 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: reproduction
     attributes:
       label: 재현 방법
       description: >-
         문제를 재현할 수 있는 최소한의 단계를
         간결하게 작성해 주세요.
-      placeholder: "예: 로그인 → 설정 저장 → 오류 발생"
+      placeholder: |
+        1. 로그인합니다.
+        2. 설정을 저장합니다.
+        3. 오류가 발생합니다.
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: expected
     attributes:
       label: 기대한 동작
@@ -36,29 +39,32 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: environment
     attributes:
       label: 실행 환경
       description: >-
         운영체제, 브라우저, 앱 버전, 배포 환경 등
         관련 정보를 작성해 주세요.
-      placeholder: "예: macOS 15 / Chrome 138 / production"
+      placeholder: |
+        - OS:
+        - 브라우저 또는 런타임:
+        - 버전:
+        - 배포 환경:
     validations:
       required: false
 
-  - type: input
+  - type: textarea
     id: logs
     attributes:
       label: 로그 및 첨부 자료
       description: >-
-        민감한 정보를 제거한 로그나 스크린샷의 URL을
-        입력해 주세요.
-      placeholder: "https://..."
+        민감한 정보를 제거한 로그, 오류 메시지,
+        스크린샷 또는 관련 URL을 첨부해 주세요.
     validations:
       required: false
 
-  - type: input
+  - type: textarea
     id: additional
     attributes:
       label: 추가 정보

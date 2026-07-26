@@ -8,7 +8,7 @@ body:
         제안해 주셔서 감사합니다.
         해결하려는 문제와 기대 효과를 중심으로 작성해 주세요.
 
-  - type: input
+  - type: textarea
     id: problem
     attributes:
       label: 해결하려는 문제
@@ -19,7 +19,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: proposal
     attributes:
       label: 제안하는 해결 방법
@@ -29,7 +29,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: alternatives
     attributes:
       label: 검토한 대안
@@ -39,7 +39,7 @@ body:
     validations:
       required: false
 
-  - type: input
+  - type: textarea
     id: impact
     attributes:
       label: 기대 효과
@@ -49,7 +49,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: additional
     attributes:
       label: 추가 정보
