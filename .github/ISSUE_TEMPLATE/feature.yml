@@ -57,3 +57,20 @@ body:
           required: true
         - label: 특정 구현보다 해결할 문제와 기대 결과를 중심으로 작성했습니다.
           required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 등록 후 Prow 명령
+
+        현재 Prow App은 Issue 본문 이벤트가 아니라 Issue 댓글 이벤트를 구독합니다. Issue를 등록한 뒤 필요한 명령을 **새 댓글**로 입력해 주세요. Issue의 `kind/*` 분류는 권장 사항이며 필수는 아닙니다.
+
+        ```text
+        /kind feature
+        /area backend
+        /priority medium
+        /label needs-triage
+        /assign @사용자
+        ```
+
+        `area`와 `priority` 값은 Issue에 맞게 변경하고, 저장소에 해당 라벨이 있을 때 사용해 주세요.

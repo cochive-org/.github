@@ -10,6 +10,25 @@
 
 - 변경 내용을 작성해 주세요.
 
+## Prow 분류 및 자동화
+
+모든 PR에는 `kind/*` 라벨이 하나 이상 필요합니다. PR을 생성하기 전에 아래 HTML 주석의 예시를 변경에 맞게 수정한 뒤 사용할 명령을 **주석 밖으로 옮겨** 주세요. 이미 PR을 생성했다면 본문 수정이 아니라 대화 탭의 **새 댓글**로 명령을 입력해 주세요.
+
+<!--
+예시:
+/kind feature
+/area backend
+/priority medium
+-->
+
+- 종류: `bug`, `feature`, `enhancement`, `documentation`, `refactor`, `test`, `chore`
+- 영역: `backend`, `frontend`, `api`, `database`, `kubernetes`, `ci`, `deployment`
+- 우선순위: `critical`, `high`, `medium`, `low`
+
+담당자 지정은 `/assign @사용자`, 리뷰 요청은 `/cc @사용자`를 사용합니다. 병합을 잠시 막으려면 `/hold`, 다시 허용하려면 `/hold cancel`을 댓글로 입력합니다.
+
+리뷰어는 필요하면 `/lgtm`을 사용하고, 변경 파일의 `OWNERS` approver는 `/approve`로 승인합니다. Tide가 활성화된 저장소는 `approved`와 차단 라벨을 병합 조건으로 사용하며, 현재 정책에서 `lgtm`은 선택 사항입니다.
+
 ## 검증 방법
 
 <!-- 실행한 테스트와 직접 확인한 내용을 작성해 주세요. -->
@@ -24,6 +43,7 @@
 - [ ] 필요한 문서와 설정을 함께 수정했습니다.
 - [ ] 호환성이 깨지는 변경이 있다면 영향과 마이그레이션 방법을 작성했습니다.
 - [ ] 민감한 정보가 코드, 로그, 스크린샷에 포함되지 않았습니다.
+- [ ] 본문 또는 PR 댓글에 변경에 맞는 `/kind` 명령을 등록했습니다.
 
 ## 참고 사항
 
