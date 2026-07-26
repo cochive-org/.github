@@ -24,17 +24,7 @@ body:
     attributes:
       label: 제안하는 해결 방법
       description: >-
-        원하는 동작이나 사용자 경험을
-        구체적으로 설명해 주세요.
-    validations:
-      required: false
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: 검토한 대안
-      description: >-
-        다른 해결 방법이나 현재 사용 중인 우회 방법이 있다면
+        원하는 동작, 사용자 경험 또는 현재 사용하는 우회 방법을
         작성해 주세요.
     validations:
       required: false
