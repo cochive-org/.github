@@ -5,7 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        제보해 주셔서 감사합니다. 문제를 빠르게 확인할 수 있도록 아래 내용을 작성해 주세요.
+        제보해 주셔서 감사합니다.
+        문제를 빠르게 확인할 수 있도록 아래 내용을 작성해 주세요.
 
   - type: input
     id: summary
@@ -20,7 +21,9 @@ body:
     id: reproduction
     attributes:
       label: 재현 방법
-      description: 문제를 재현할 수 있는 최소한의 단계를 간결하게 작성해 주세요.
+      description: >-
+        문제를 재현할 수 있는 최소한의 단계를
+        간결하게 작성해 주세요.
       placeholder: "예: 로그인 → 설정 저장 → 오류 발생"
     validations:
       required: true
@@ -37,7 +40,9 @@ body:
     id: environment
     attributes:
       label: 실행 환경
-      description: 운영체제, 브라우저, 앱 버전, 배포 환경 등 관련 정보를 작성해 주세요.
+      description: >-
+        운영체제, 브라우저, 앱 버전, 배포 환경 등
+        관련 정보를 작성해 주세요.
       placeholder: "예: macOS 15 / Chrome 138 / production"
     validations:
       required: false
@@ -46,7 +51,9 @@ body:
     id: logs
     attributes:
       label: 로그 및 첨부 자료
-      description: 민감한 정보를 제거한 로그나 스크린샷의 URL을 입력해 주세요.
+      description: >-
+        민감한 정보를 제거한 로그나 스크린샷의 URL을
+        입력해 주세요.
       placeholder: "https://..."
     validations:
       required: false
@@ -55,7 +62,9 @@ body:
     id: additional
     attributes:
       label: 추가 정보
-      description: 원인 추정, 임시 해결 방법 등 참고할 내용이 있다면 작성해 주세요.
+      description: >-
+        원인 추정, 임시 해결 방법 등
+        참고할 내용이 있다면 작성해 주세요.
     validations:
       required: false
 
@@ -66,7 +75,9 @@ body:
       options:
         - label: 같은 문제가 이미 등록되어 있는지 검색했습니다.
           required: true
-        - label: 공개하면 안 되는 개인정보와 비밀정보를 제거했습니다.
+        - label: >-
+            공개하면 안 되는 개인정보와 비밀정보를
+            제거했습니다.
           required: true
 
   - type: markdown
@@ -74,7 +85,11 @@ body:
       value: |
         ### 등록 후 Prow 명령
 
-        현재 Prow App은 Issue 본문 이벤트가 아니라 Issue 댓글 이벤트를 구독합니다. Issue를 등록한 뒤 필요한 명령을 **새 댓글**로 입력해 주세요. Issue의 `kind/*` 분류는 권장 사항이며 필수는 아닙니다.
+        현재 Prow App은 Issue 본문 이벤트가 아니라
+        Issue 댓글 이벤트를 구독합니다.
+        Issue를 등록한 뒤 필요한 명령을
+        **새 댓글**로 입력해 주세요.
+        Issue의 `kind/*` 분류는 권장 사항이며 필수는 아닙니다.
 
         ```text
         /kind bug
@@ -84,4 +99,5 @@ body:
         /assign @사용자
         ```
 
-        `area`와 `priority` 값은 Issue에 맞게 변경하고, 저장소에 해당 라벨이 있을 때 사용해 주세요.
+        `area`와 `priority` 값은 Issue에 맞게 변경하고,
+        저장소에 해당 라벨이 있을 때 사용해 주세요.
