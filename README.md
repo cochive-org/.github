@@ -4,6 +4,7 @@
 Health 파일을 관리합니다.
 
 - Pull Request 작성 시 공통 체크리스트를 제공합니다.
+- PR 자동화와 Prow self-approve 기준은 [`PULL_REQUEST_RULES.md`](PULL_REQUEST_RULES.md)에 정의합니다.
 - 버그 제보와 기능 요청을 구조화된 Issue Form으로 받습니다.
 - 개별 저장소에 같은 종류의 템플릿이 있으면 개별 저장소 설정이 우선합니다.
 
